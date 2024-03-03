@@ -7,7 +7,7 @@ export const About = () => {
       <Helmet>
         <title>About LinkBridge - Your Personal Link Hub for Easy Connections</title>
       </Helmet>
-      
+
       <h1 id="linkbridge">LinkBridge</h1>
 
       <p>
@@ -21,16 +21,18 @@ export const About = () => {
 
       <h2 id="unveilingthejourneyofbuildinglinkbridge">🔴 Unveiling the Journey of Building LinkBridge</h2>
 
-      <p>
-        This project represents a significant milestone in my journey as a full-stack developer. I poured my heart and soul into crafting this
-        application, leveraging my MERN stack skills and embracing the principles of clean code and industry best practices.
-      </p>
+      <blockquote>
+        <p>
+          This project represents a significant milestone in my journey as a mern-stack developer. I poured my heart and soul into crafting this
+          application, leveraging my MERN stack skills and embracing the principles of clean code and industry best practices.
+        </p>
+      </blockquote>
 
       <h2 id="projectcreatedat">Project Created at</h2>
 
       <ul>
         <li>
-          🗓 <strong>Feb 2024 - Feb 2024</strong>
+          🗓 <strong>Feb 2024 - March 2024</strong>
         </li>
       </ul>
 
@@ -48,6 +50,8 @@ export const About = () => {
         <li>Cloudinary</li>
 
         <li>React-Query</li>
+
+        <li>Zustand</li>
 
         <li>Node.js + Express.js</li>
 
@@ -80,7 +84,18 @@ export const About = () => {
         <li>📝 Change fonts</li>
 
         <li>🚪 Logout functionality</li>
+
+        <li>🌙 Dark theme feature</li>
+
+        <li>📈 Link stats (showing how many times and at what times your links get clicked)</li>
       </ul>
+
+      <h2 id="screenshots">Screenshots</h2>
+
+      <div class="flex justify-between gap-2 w-full overflow-scroll">
+        <img className="w-7/12 rounded" src="/public/ss-orange.jpg" alt="Screenshot" />
+        <img className="w-7/12 rounded" src="/public/ss-blue.jpg" alt="Screenshot" />
+      </div>
 
       <h2 id="livedemo">Live Demo 🎉</h2>
 
@@ -90,15 +105,9 @@ export const About = () => {
         </li>
 
         <li>
-          <strong>Backend:</strong> Explore the backend part of this app <a href="#">here</a>.
+          <strong>Backend:</strong> Explore the backend part of this app <a href="https://github.com/fazle-rabbi-dev/link-bridge-api">here</a>.
         </li>
       </ul>
-
-      <h2 id="envsetup">.env Setup</h2>
-
-      <pre>
-        <code class="sh language-sh"># Add your environment variables here</code>
-      </pre>
 
       <h2 id="connectwithme">📬 Connect with me</h2>
 

@@ -4,6 +4,12 @@
 
 LinkBridge is a full-stack MERN linktree application designed to help you organize your social media and other links in one convenient location. With LinkBridge, you can create your own profile, essentially a single-page website, in just a few moments.
 
+<div align="">
+<a align="center" href="https://linkbridge.vercel.app">
+  <img width="40%" class="" src="/public/live-btn.png" alt="" />
+</a>
+</div>
+
 ## 🔴 Unveiling the Journey of Building LinkBridge
 > [!NOTE]
 > This project represents a significant milestone in my journey as a mern-stack developer. I poured my heart and soul into crafting this application, leveraging my MERN stack skills and embracing the principles of clean code and industry best practices.
@@ -40,6 +46,13 @@ LinkBridge is a full-stack MERN linktree application designed to help you organi
 - 🚪 Logout functionality
 - 🌙 Dark theme feature
 - 📈 Link stats (showing how many times and at what times your links get clicked)
+
+## Screenshots
+
+<div align="center" class="">
+  <img width="40%" src="/public/ss-orange.jpg" alt="" />
+  <img width="40%" src="/public/ss-blue.jpg" alt="" />
+</div>
 
 ## Live Demo 🎉
 

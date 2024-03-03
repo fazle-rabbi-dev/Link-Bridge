@@ -62,7 +62,15 @@ LinkBridge is a full-stack MERN linktree application designed to help you organi
 ## .env Setup
 
 ```sh
-# Add your environment variables here
+VITE_APPWRITE_URL=https://cloud.appwrite.io/v1
+VITE_APPWRITE_PROJECT_ID=
+VITE_APPWRITE_STORAGE_ID=
+VITE_APPWRITE_GITHUB_AUTH_SUCCESS_CALLBACK=http://localhost:5173/sign-in?authstatus=success&source=github
+VITE_APPWRITE_GOOGLE_AUTH_SUCCESS_CALLBACK=http://localhost:5173/sign-in?authstatus=success&source=google
+VITE_APPWRITE_AUTH_FAILURE_CALLBACK=http://localhost:5173/sign-in?authstatus=failed
+
+VITE_HOST_NAME=http://localhost:5173/
+VITE_API_ROOT=
 ```
 
 ## 📬 Connect with me

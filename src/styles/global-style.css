@@ -139,11 +139,11 @@
   .prose strong {
     @apply dark:text-ghostwhite;
   }
-  
+
   .prose blockquote p {
     @apply dark:text-ghostwhite;
   }
-  
+
   /* ====== Auth Page */
   .auth-form-input {
     @apply w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-purple-70 shadow-sm rounded-lg dark:focus:border-purple-60 dark:text-gray-50 dark-border;

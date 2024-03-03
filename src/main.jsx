@@ -11,12 +11,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <QueryProvider>
     <HelmetProvider>
       <Router>
-        <App />
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
       </Router>
     </HelmetProvider>
   </QueryProvider>
 );
-
-/*
-<React.StrictMode>
-*/

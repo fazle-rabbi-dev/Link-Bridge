@@ -1,0 +1,472 @@
+@import "./fonts.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo&family=Josefin+Sans:wght@400;500;600;700&family=Lora&family=Open+Sans&family=Patrick+Hand&family=Poppins&family=Quicksand&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-ghostwhite font-inter dark:bg-dark-primary dark:text-ghostwhite;
+  }
+}
+
+@layer components {
+  .max-container {
+    @apply w-full mx-auto md:max-w-3xl xl:max-w-5xl;
+  }
+
+  .padding-container {
+    @apply px-6 md:px-0;
+  }
+}
+
+@layer utilities {
+  /* ====== TYPOGRAPHY */
+  .heading1 {
+    @apply text-[64px] leading-[67.2px] font-bold;
+  }
+
+  .heading2 {
+    @apply font-bold text-[48px] leading-[50.4px];
+  }
+
+  .heading3 {
+    @apply font-bold sm:text-[32px] sm:leading-[33.6px] text-[28px] leading-[40px] tracking-[-0.25%];
+  }
+
+  .heading4 {
+    @apply font-semibold text-[20px] leading-[26px] tracking-[0.25%];
+  }
+
+  .base-regular {
+    @apply text-[20px] font-normal leading-[31.2px];
+  }
+
+  .base-semibold {
+    @apply text-[20px] font-semibold leading-[31.2px];
+  }
+
+  .body-text {
+    @apply text-[16px] leading-[22px] font-normal text-gray-600 dark:text-ghostwhite/70;
+  }
+
+  .body-regular {
+    @apply text-[14px] text-gray-500 font-normal leading-[20.8px];
+  }
+
+  .body-medium {
+    @apply text-[16px] font-medium leading-[22.4px];
+  }
+
+  .body-semibold {
+    @apply text-[16px] font-semibold leading-[20.8px];
+  }
+
+  /* ====== UTILITIES */
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-start {
+    @apply flex justify-start items-start;
+  }
+
+  .flex-end {
+    @apply flex justify-end;
+  }
+
+  .btn-base {
+    @apply rounded px-4 py-2;
+  }
+
+  .submit-btn {
+    @apply w-full rounded gradient_purple-pink text-white px-4 py-2;
+  }
+
+  .btn-gradient {
+    @apply rounded gradient_purple-pink text-white px-4 py-2;
+  }
+
+  .form-input {
+    @apply w-full text-gray-700 mt-2 outline-0 px-2 py-2 rounded border-[1px] border-gray-200 focus:border-purple-600 dark:focus:border-purple-400 dark:bg-transparent dark:border-ghostwhite/10 dark:text-ghostwhite;
+  }
+
+  .error-message {
+    @apply text-sm text-rose-400 font-patrickhand;
+  }
+
+  .dark-mode {
+    @apply dark:text-ghostwhite dark:bg-dark-secondary;
+  }
+
+  .dark-text1 {
+    @apply dark:text-gray-50;
+  }
+
+  .dark-text2 {
+    @apply dark:text-gray-60;
+  }
+
+  .dark-border {
+    @apply dark:border-ghostwhite/30;
+  }
+
+  .large-gap {
+    @apply md:space-y-8;
+  }
+
+  /* ====== About Page ====== */
+  .prose h1 {
+    @apply dark:text-ghostwhite;
+  }
+  .prose h2 {
+    @apply dark:text-ghostwhite;
+  }
+  .prose a {
+    @apply dark:text-ghostwhite;
+  }
+  .prose strong {
+    @apply dark:text-ghostwhite;
+  }
+
+  /* ====== Auth Page */
+  .auth-form-input {
+    @apply w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-purple-70 shadow-sm rounded-lg dark:focus:border-purple-60 dark:text-gray-50 dark-border;
+  }
+
+  /* ====== Links Page */
+  .link-card {
+    @apply w-full bg-white rounded-md shadow-2xl px-4 py-4 flex flex-col dark:bg-dark-secondary;
+  }
+
+  .social-card {
+    @apply w-full bg-white px-4 py-5 flex flex-col gap-2 md:flex-row md:justify-between dark:bg-dark-secondary;
+  }
+
+  .addlink-input {
+    @apply outline-0 border-[1px] border-transparent w-full bg-gray-100 rounded px-3 py-2 placeholder:text-gray-500 placeholder:text-sm focus:border-[1px] focus:border-rose-400 dark:bg-dark-primary focus:bg-transparent dark:focus:bg-transparent;
+  }
+
+  .add-link-modal {
+    @apply bg-white rounded-md shadow-md bottom-0 left-0 right-0 w-full pb-6 dark:bg-dark-secondary md:max-w-3xl md:mx-auto;
+  }
+
+  .add-social-link-modal-searchbar {
+    @apply w-full bg-transparent py-3 pl-12 pr-4 text-gray-500 border rounded-md outline-none focus:border-purple-70 dark:focus:border-purple-60 dark:text-ghostwhite;
+  }
+
+  .social-btn {
+    @apply flex items-center justify-between border-[1px] border-gray-200/80 rounded py-2 px-3 text-gray-700 dark:text-gray-50;
+  }
+
+  .close-btn {
+    @apply bg-gray-200/60 p-2 rounded-md dark:bg-dark-primary dark:text-ghostwhite;
+  }
+
+  /* ====== Design Page */
+  .selected-item {
+    @apply ring-2 ring-offset-1 ring-purple-80 dark:ring-purple-70;
+  }
+
+  /* ====== Navbar Component */
+  .action-btn {
+    @apply px-2 py-1 rounded text-white;
+  }
+}
+
+/* 
+=================================================================================================================================================================================================================================
+=> Others Custom styles
+===========================================================================
+*/
+
+/* Default Themes For Linktree Page Customization */
+.theme_pink {
+  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+
+.theme_purple {
+  background-image: linear-gradient(to top, #7c33ff 0%, #ff4dea 100%);
+}
+
+.theme_green {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.theme_blue {
+  background-image: linear-gradient(to right, #3b1cff 0%, #1be081 100%);
+}
+
+.theme_dark_purple {
+  background-image: linear-gradient(to right, #630c9b 0%, #af03c6 100%);
+}
+
+.theme_orange {
+  background-image: linear-gradient(to right, #eb2f4d 0%, #da8b23 100%);
+}
+
+.gradient_purple-pink {
+  background: rgb(131, 58, 180);
+  background: -webkit-linear-gradient(left, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  background: -moz-linear-gradient(left, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  background: -o-linear-gradient(left, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  background: linear-gradient(to right, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* ===================== */
+/* === The Bellow Code Copied From: https://uiverse.io/ === */
+/* ===================== */
+
+/*
+  Add Link Button Style
+*/
+.comic-button {
+  /* display: inline-block; */
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #9314ff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.comic-button:hover {
+  background-color: #fff;
+  color: #9314ff;
+  border: 2px solid #9314ff;
+  box-shadow: 5px 5px 0px #9314ff;
+}
+
+.comic-button:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+/*
+  Page Loader
+*/
+.spinner {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+}
+
+.spinner div {
+  position: absolute;
+  width: 50%;
+  height: 150%;
+  background: #000000;
+  transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+  animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;
+}
+
+.spinner div:nth-child(1) {
+  --delay: 0.1;
+  --rotation: 36;
+  --translation: 150;
+}
+
+.spinner div:nth-child(2) {
+  --delay: 0.2;
+  --rotation: 72;
+  --translation: 150;
+}
+
+.spinner div:nth-child(3) {
+  --delay: 0.3;
+  --rotation: 108;
+  --translation: 150;
+}
+
+.spinner div:nth-child(4) {
+  --delay: 0.4;
+  --rotation: 144;
+  --translation: 150;
+}
+
+.spinner div:nth-child(5) {
+  --delay: 0.5;
+  --rotation: 180;
+  --translation: 150;
+}
+
+.spinner div:nth-child(6) {
+  --delay: 0.6;
+  --rotation: 216;
+  --translation: 150;
+}
+
+.spinner div:nth-child(7) {
+  --delay: 0.7;
+  --rotation: 252;
+  --translation: 150;
+}
+
+.spinner div:nth-child(8) {
+  --delay: 0.8;
+  --rotation: 288;
+  --translation: 150;
+}
+
+.spinner div:nth-child(9) {
+  --delay: 0.9;
+  --rotation: 324;
+  --translation: 150;
+}
+
+.spinner div:nth-child(10) {
+  --delay: 1;
+  --rotation: 360;
+  --translation: 150;
+}
+
+@keyframes spinner-fzua35 {
+  0%,
+  10%,
+  20%,
+  30%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+  }
+
+  50% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));
+  }
+}
+
+/* Forgot Password Page */
+.form-container {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #212121;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow:
+    0px 0px 3px rgba(0, 0, 0, 0.084),
+    0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .logo-container {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #1778f2;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  color: #fff;
+  background-color: #212121;
+  border: none;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin: 12px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow:
+    0px 0px 3px rgba(0, 0, 0, 0.084),
+    0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #313131;
+}
+
+.form-container .link {
+  color: #1778f2;
+  text-decoration: none;
+}
+
+.form-container .signup-link {
+  align-self: center;
+  font-weight: 500;
+}
+
+.form-container .signup-link .link {
+  font-weight: 400;
+}
+
+.form-container .link:hover {
+  text-decoration: underline;
+}

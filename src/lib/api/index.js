@@ -1,7 +1,8 @@
-// import { API_ROOT } from "@/constants";
-const API_ROOT = import.meta.env.VITE_API_ROOT
+import { API_ROOT } from "@/constants";
+// const API_ROOT = import.meta.env.VITE_API_ROOT
 import axios from "axios";
 import { getLocalStorageItem } from "@/lib/utils";
+// import { uploadOnCloudinary, deleteFromCloudinary } from "@/lib/utils"
 
 // =========================================
 // POST, PATCH, DELETE <request>
@@ -108,6 +109,9 @@ export const getLinktreeProfile = async username => {
 };
 
 export const updateProfile = async ({ data, type }) => {
+  console.log(data, type)
+  
+  return {};
   const res = await mutationRequest(`${API_ROOT}/users/${data?.id}?updateType=${type}`, data, true, "PATCH");
   return res;
 };

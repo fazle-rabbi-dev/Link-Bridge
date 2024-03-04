@@ -31,12 +31,12 @@ export const HeaderDashboard = () => {
     <header className="fixed z-50 top-0 w-full py-6 px-6 bg-white shadow-md dark:bg-dark-secondary">
       <div className="max-container flex items-center justify-between">
         <div className="w-4/12">
-          <Logo redirect="/" />
+          <Logo redirect="/dashboard/links" />
         </div>
 
         <div className="flex flex-1 gap-3 justify-end">
           <p className="flex items-center">
-            <Link target="_blank" to="https://github.com/fazle-rabbi-dev/Link-Bridge.vercel.app" className="px-2 py-2" type="button">
+            <Link target="_blank" to="https://github.com/fazle-rabbi-dev/Link-Bridge" className="px-2 py-2" type="button">
               <span>
                 <Github size={27} />
               </span>

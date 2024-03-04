@@ -172,3 +172,4 @@ export function generateAvatar(name) {
 export const createSlug = link => {
   return `/dashboard/${link.label.toLowerCase()}`;
 };
+

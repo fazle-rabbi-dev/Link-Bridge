@@ -58,7 +58,7 @@ export const ForgotPassword = () => {
           </div>
 
           <button disabled={isResetingPassword} className="mt-4 py-3 rounded bg-black/90 text-white dark:bg-white dark:text-black/80" type="submit">
-            {isResetingPassword ? <Loading /> : "Send Email"}
+            {isResetingPassword ? <Loading size={20} /> : "Send Email"}
           </button>
         </form>
 

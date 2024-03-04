@@ -55,6 +55,8 @@ export const AddLinkModal = () => {
     if (res?.status) {
       closeModal();
       showToast(res.data?.message || "Oops! something went wrong.");
+    }else{
+      showToast(res.error?.message || "Something went wrong.Try again later.", "error", 2500)
     }
   };
 
@@ -82,6 +84,8 @@ export const AddLinkModal = () => {
     if (res?.status) {
       closeModal();
       showToast(res.data?.message || "Oops! something went wrong.");
+    }else{
+      showToast(res.error?.message || "Something went wrong.Try again later.", "error", 2500)
     }
   };
 
@@ -97,6 +101,8 @@ export const AddLinkModal = () => {
     if (res?.status) {
       closeModal();
       showToast(res.data?.message || "Oops! something went wrong.");
+    }else{
+      showToast(res.error?.message || "Something went wrong.Try again later.", "error", 2500)
     }
   };
 

@@ -60,7 +60,7 @@ export const LinkTree = () => {
         <title>{user?.seoMetadata?.title || "Linktree"}</title>
         <meta name="description" content={user?.seoMetadata?.desc || "Linktree profile"} />
       </Helmet>
-      
+
       <div className="max-container padding-container">
         <section>
           <div className="">
@@ -76,11 +76,14 @@ export const LinkTree = () => {
               {user?.profilePic?.url ? (
                 <img className="w-20 h-20 block mx-auto rounded-full" src={user?.profilePic?.url} alt={username} />
               ) : (
-                <Avatar text={user?.name.slice(0, 2)} />
+                <Avatar 
+                  text={user?.name.slice(0, 2)} 
+                  size="80px"
+                />
               )}
             </div>
             <h2 className="heading3 mt-2">{user?.name}</h2>
-            <p className="text-sm -mt-2">@{user?.username}</p>
+            <p className="text-sm -mt-1">@{user?.username}</p>
             <p className="mt-2">{user?.bio}</p>
           </div>
         </section>
@@ -96,18 +99,24 @@ export const LinkTree = () => {
             ))}
           </ul>
 
-          <ul className="flex flex-col gap-2">
+          <ul className="flex flex-col gap-4">
             {user?.links?.customLinks.map(link => (
               <button
                 key={link._id}
                 type="button"
-                className={cn("text-center bg-black/90 text-white py-2 px-3", design?.buttonStyle.radius)}
+                className={cn(
+                  "text-center bg-black/90 text-white", 
+                  design?.buttonStyle.radius,
+                  
+                )}
                 style={{
-                  backgroundColor: design?.buttonStyle?.bgColor,
+                  backgroundColor: design?.buttonStyle.type === "fill" && design?.buttonStyle?.bgColor,
+                  backgroundColor: design?.buttonStyle.type === "outline" && "transparent",
+                  border: design?.buttonStyle.type === "outline" && `1px solid ${design?.buttonStyle?.textColor}`,
                   color: design?.buttonStyle?.textColor
                 }}
               >
-                <Link onClick={() => handleClickCount("custom", link?._id)} target="_blank" to={link.url}>
+                <Link onClick={() => handleClickCount("custom", link?._id)} target="_blank" to={link.url} className="block py-2 px-3">
                   {link.title}
                 </Link>
               </button>

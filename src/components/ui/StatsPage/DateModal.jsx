@@ -13,7 +13,6 @@ export const DateModal = ({ openDateModal, setOpenDateModal, link }) => {
         <h2 className="heading3">Link Clicked At 👇</h2>
 
         <ul className="h-[80%] border-[.5px] border-gray-100 p-2 overflow-scroll mt-4 space-y-2 dark:border-gray-50/20">
-          <h3 className="text-purple-70 mb-4 dark:text-purple-60">📢 Total Clicked: {link?.clickHistory.length}</h3>
 
           {link?.clickHistory.length === 0 && <span>Haven't clicked yet !</span>}
 

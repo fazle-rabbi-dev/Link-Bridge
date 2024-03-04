@@ -10,9 +10,15 @@ LinkBridge is a full-stack MERN linktree application designed to help you organi
 </a>
 </div>
 
+## Fun Fact
+> [!NOTE]
+> I created this project entirely using my **Android Phone** with apps: Acode & Termux.
+
 ## 🔴 Unveiling the Journey of Building LinkBridge
 > [!NOTE]
 > This project represents a significant milestone in my journey as a mern-stack developer. I poured my heart and soul into crafting this application, leveraging my MERN stack skills and embracing the principles of clean code and industry best practices.
+
+👉 I took design inspiration for this project from <a href="https://bio.link">bio link.</a>
 
 ## Project Created at
 
@@ -50,8 +56,7 @@ LinkBridge is a full-stack MERN linktree application designed to help you organi
 ## Screenshots
 
 <div align="center" class="">
-  <img width="40%" src="/public/ss-orange.jpg" alt="" />
-  <img width="40%" src="/public/ss-blue.jpg" alt="" />
+  <img width="100%" src="/public/showcase.jpg" alt="" />
 </div>
 
 ## Live Demo 🎉
@@ -75,13 +80,14 @@ VITE_API_ROOT=
 
 ## 📬 Connect with me
 
-Let's connect! Reach out for collaborations, projects, or just a friendly chat.
+> Let's connect! Reach out for collaborations, projects, or just a friendly chat.
 
-- [LinkedIn](https://linkedin.com/in/fazlerabbidev)
-- [Twitter](https://twitter.com/fazle_rabbi_dev)
-- [Medium](https://medium.com/@fazle-rabbi-dev)
-- [Dev.to](https://dev.to/fazle-rabbi-dev)
-- [Facebook](https://facebook.com/fazlerabbidev)
-- [Instagram](https://instagram.com/fazle_rabbi_dev)
+<a target="_blank" href="https://linkedin.com/in/fazlerabbidev" ><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="Fazle Rabbi" height="30" width="auto" /></a>
+<a target="_blank" href="https://twitter.com/fazle_rabbi_dev" ><img align="center" src="https://seeklogo.com/images/T/twitter-x-logo-101C7D2420-seeklogo.com.png?v=638258862800000000" alt="Fazle Rabbi" height="30" width="auto" /></a>
+<a target="_blank" href="https://medium.com/@fazle-rabbi-dev" ><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg" alt="Fazle Rabbi" height="30" width="auto" /></a>
+<a target="_blank" href="https://dev.to/fazle-rabbi-dev" ><img align="center" src="https://seeklogo.com/images/D/dev-to-logo-BDC0EFA32F-seeklogo.com.png" alt="Fazle Rabbi" height="30" width="auto" /></a>
+<a target="_blank" href="https://facebook.com/fazlerabbidev" ><img align="center" src="https://seeklogo.com/images/F/facebook-icon-black-logo-133935095E-seeklogo.com.png" alt="Fazle Rabbi" height="30" width="auto" /></a>
+<a target="_blank" href="https://instagram.com/fazle_rabbi_dev" ><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="Fazle Rabbi" height="30" width="auto" /></a>
 
-Feel free to explore, contribute, and get inspired!
+*Feel free to explore, contribute, and get inspired!*
+

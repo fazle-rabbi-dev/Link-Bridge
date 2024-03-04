@@ -50,7 +50,7 @@ export const Links = () => {
 
       {/* Social Links */}
       <section className="mt-16">
-        <h2 className="heading4 text-gray-80">SOCIALS</h2>
+        <h2 className="heading4 text-gray-80 dark:text-gray-60">SOCIALS</h2>
 
         <ul className="mt-4 flex flex-col gap-4">
           {socialLinks?.map((cardData, index) => (

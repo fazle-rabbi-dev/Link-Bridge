@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 
 export const About = () => {
   return (
-    <section className="prose dark:text-white">
+    <section className="prose mt-4 dark:text-white">
       <Helmet>
         <title>About LinkBridge - Your Personal Link Hub for Easy Connections</title>
       </Helmet>
@@ -11,13 +11,21 @@ export const About = () => {
       <h1 id="linkbridge">LinkBridge</h1>
 
       <p>
-        <img src="/public/thumbnail.jpg" alt="LinkBridge" />
+        <img src="/thumbnail.jpg" alt="LinkBridge" />
       </p>
 
       <p>
         LinkBridge is a full-stack MERN linktree application designed to help you organize your social media and other links in one convenient
         location. With LinkBridge, you can create your own profile, essentially a single-page website, in just a few moments.
       </p>
+
+      <h2 id="funfact">Fun Fact</h2>
+
+      <blockquote>
+        <p>
+          I created this project entirely using my <strong>Android Phone</strong> with apps: Acode &amp; Termux.
+        </p>
+      </blockquote>
 
       <h2 id="unveilingthejourneyofbuildinglinkbridge">🔴 Unveiling the Journey of Building LinkBridge</h2>
 
@@ -27,6 +35,13 @@ export const About = () => {
           application, leveraging my MERN stack skills and embracing the principles of clean code and industry best practices.
         </p>
       </blockquote>
+
+      <p>
+        👉 I took design inspiration for this project from{" "}
+        <a target="_blank" href="https://bio.link">
+          bio link.
+        </a>
+      </p>
 
       <h2 id="projectcreatedat">Project Created at</h2>
 
@@ -92,54 +107,73 @@ export const About = () => {
 
       <h2 id="screenshots">Screenshots</h2>
 
-      <div class="flex justify-between gap-2 w-full overflow-scroll">
-        <img className="w-7/12 rounded" src="/public/ss-orange.jpg" alt="Screenshot" />
-        <img className="w-7/12 rounded" src="/public/ss-blue.jpg" alt="Screenshot" />
+      <div align="center" class="">
+        <img width="100%" src="/showcase.jpg" alt="" />
       </div>
 
       <h2 id="livedemo">Live Demo 🎉</h2>
 
       <ul>
         <li>
-          Explore the live version of LinkBridge <a href="https://linkbridge.vercel.app">here</a>.
+          Explore the live version of LinkBridge{" "}
+          <a target="_blank" href="https://linkbridge.vercel.app">
+            here
+          </a>
+          .
         </li>
 
         <li>
-          <strong>Backend:</strong> Explore the backend part of this app <a href="https://github.com/fazle-rabbi-dev/link-bridge-api">here</a>.
+          <strong>Backend:</strong> Explore the backend part of this app{" "}
+          <a target="_blank" href="https://github.com/fazle-rabbi-dev/link-bridge-api">
+            here
+          </a>
+          .
         </li>
       </ul>
 
       <h2 id="connectwithme">📬 Connect with me</h2>
 
-      <p>Let's connect! Reach out for collaborations, projects, or just a friendly chat.</p>
+      <blockquote>
+        <p>Let's connect! Reach out for collaborations, projects, or just a friendly chat.</p>
+      </blockquote>
 
       <ul>
         <li>
-          <a href="https://linkedin.com/in/fazlerabbidev">LinkedIn</a>
+          <a target="_blank" href="https://linkedin.com/in/fazlerabbidev">
+            LinkedIn
+          </a>
         </li>
 
         <li>
-          <a href="https://twitter.com/fazle_rabbi_dev">Twitter</a>
+          <a target="_blank" href="https://twitter.com/fazle_rabbi_dev">
+            Twitter
+          </a>
         </li>
 
         <li>
-          <a href="https://medium.com/@fazle-rabbi-dev">Medium</a>
+          <a target="_blank" href="https://medium.com/@fazle-rabbi-dev">
+            Medium
+          </a>
         </li>
 
         <li>
-          <a href="https://dev.to/fazle-rabbi-dev">Dev.to</a>
+          <a target="_blank" href="https://dev.to/fazle-rabbi-dev">
+            Dev.to
+          </a>
         </li>
 
         <li>
-          <a href="https://facebook.com/fazlerabbidev">Facebook</a>
+          <a target="_blank" href="https://facebook.com/fazlerabbidev">
+            Facebook
+          </a>
         </li>
 
         <li>
-          <a href="https://instagram.com/fazle_rabbi_dev">Instagram</a>
+          <a target="_blank" href="https://instagram.com/fazle_rabbi_dev">
+            Instagram
+          </a>
         </li>
       </ul>
-
-      <p>Feel free to explore, contribute, and get inspired!</p>
     </section>
   );
 };

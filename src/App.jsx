@@ -21,10 +21,10 @@ function App() {
     useGetUser(loggedInUserId);
 
   useEffect(() => {
-    eruda.init({
+    /*eruda.init({
       element: document.getElementById("console"),
       tools: []
-    });
+    });*/
 
     // Set logged in user id
     const user = getLocalStorageItem("loggedinUser");

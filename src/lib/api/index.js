@@ -1,5 +1,4 @@
-import { API_ROOT } from "@/constants";
-// const API_ROOT = import.meta.env.VITE_API_ROOT
+const API_ROOT = import.meta.env.VITE_API_ROOT
 import axios from "axios";
 import { getLocalStorageItem } from "@/lib/utils";
 // import { uploadOnCloudinary, deleteFromCloudinary } from "@/lib/utils"

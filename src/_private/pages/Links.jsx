@@ -1,8 +1,8 @@
 import { Plus } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button, LinkCard, SocialLinkCard, AddLinkModal, AddSocialLinkModal, Loading } from "@/components";
 import { useGetLinks } from "@/lib/react-query";
-import { useLinkStore } from "@/zustand-stores";
+import { useLinkStore, useAuthStore } from "@/zustand-stores";
 import { Helmet } from 'react-helmet-async';
 
 export const Links = () => {
@@ -11,11 +11,11 @@ export const Links = () => {
     openSocialLinkModal: state.openSocialLinkModal
   }));
 
-  // Mutation From React-Query
+  // Queries & Mutation From React-Query
   const { data: links, isPending: isLoadingLinks, isError } = useGetLinks();
   const customLinks = links?.data?.data?.customLinks || [];
   const socialLinks = links?.data?.data?.socialLinks || [];
-
+  
   if (isError) {
     return <p className="error-message text-center m-4">⚠️ Something went wrong!</p>;
   }

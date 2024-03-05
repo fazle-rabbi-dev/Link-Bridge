@@ -116,7 +116,7 @@ export const updateProfile = async ({ data, type }) => {
   }
   
   // Remove profile pic
-  if(data.removeProfilePic){
+  if(data.removeProfilePic === "yes" && data.profilePicPublicId){
     await deleteFile(data.profilePicPublicId)
   }
   

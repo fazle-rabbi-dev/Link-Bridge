@@ -25,7 +25,7 @@ export const Signin = () => {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  // Mutations from react-query
+  // Queries & Mutations from react-query
   const { mutateAsync: login, isPending: isLogining } = useLoginUserAccount();
   const { mutateAsync: createAccount, isPending: isCreatingAccount } = useCreateUserAccount();
   const { mutateAsync: loginWithSocial, isPending: isLoginingWithSocial } = useLoginUserAccountWithSocial();
@@ -44,7 +44,8 @@ export const Signin = () => {
       showToast(res.data.message, "success", 3000);
       setLocalStorageItem("loggedinUser", user);
       setUser(user);
-      navigate("/dashboard/links");
+      // navigate("/dashboard/links");
+      window.location.href = "/dashboard/links"
     }
   };
 
@@ -77,7 +78,8 @@ export const Signin = () => {
         showToast("Loggedin successfully", "success", 2000);
         setLocalStorageItem("loggedinUser", user);
         setUser(user);
-        navigate("/dashboard/links");
+        // navigate("/dashboard/links");
+        window.location.href = "/dashboard/links"
       } else {
         setIsLoading(false);
       }

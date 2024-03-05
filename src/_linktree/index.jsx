@@ -110,8 +110,7 @@ export const LinkTree = () => {
                   
                 )}
                 style={{
-                  backgroundColor: design?.buttonStyle.type === "fill" && design?.buttonStyle?.bgColor,
-                  backgroundColor: design?.buttonStyle.type === "outline" && "transparent",
+                  backgroundColor: design?.buttonStyle.type === "fill" ? design?.buttonStyle?.bgColor : "transparent",
                   border: design?.buttonStyle.type === "outline" && `1px solid ${design?.buttonStyle?.textColor}`,
                   color: design?.buttonStyle?.textColor
                 }}

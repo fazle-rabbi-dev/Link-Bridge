@@ -4,6 +4,7 @@ import { showToast } from "@/lib/utils";
 import { ColorPicker } from "./ColorPicker";
 import { useUpdateProfileDesign } from "@/lib/react-query";
 import { useThemeStore } from "@/zustand-stores";
+import { Loading } from "@/components"
 
 export const Button = () => {
   const [selectedButton, setSelectedButton] = useState("");
@@ -18,7 +19,7 @@ export const Button = () => {
   // =====================================================================================================================
   const changeButtonStyle = async (type, value) => {
     const data = {};
-
+    
     if (type === "radius") {
       setSelectedButton(value.name);
       data.buttonStyle = {
@@ -69,22 +70,28 @@ export const Button = () => {
         <div className="flex justify-between items-center gap-2">
           <ColorPicker color={bgColor} setColor={setBgColor} />
           <button
+            disabled={isUpdating}
             onClick={() => changeButtonStyle("bgColor")}
             className="w-40 text-sm gradient_purple-pink text-white px-4 py-2 rounded"
             type="button"
           >
-            Update Bg Color
+            {
+              isUpdating ? <Loading /> : "Update Bg Color"
+            }
           </button>
         </div>
 
         <div className="flex justify-between items-center gap-2">
           <ColorPicker color={textColor} setColor={setTextColor} />
           <button
+            disabled={isUpdating}
             onClick={() => changeButtonStyle("textColor")}
             className="w-40 text-sm gradient_purple-pink text-white px-4 py-2 rounded"
             type="button"
           >
-            Update Text Color
+            {
+              isUpdating ? <Loading /> : "Update Text Color"
+            }
           </button>
         </div>
       </div>

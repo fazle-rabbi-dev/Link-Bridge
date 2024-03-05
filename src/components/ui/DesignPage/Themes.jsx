@@ -9,7 +9,8 @@ export const Themes = () => {
   const { mutateAsync: updateDesign, isPending: isUpdating } = useUpdateProfileDesign();
   
   const updateTheme = async themeName => {
-    setSelectedTheme(themeName.name);
+    setSelectedTheme(themeName.style);
+    
     const { style } = themeName;
     const data = {
       theme: style
@@ -38,7 +39,7 @@ export const Themes = () => {
 
 const Theme = ({ theme, selectedTheme, updateTheme }) => {
   const design = useThemeStore(state => state.design);
-
+  
   return (
     <li className="">
       <button

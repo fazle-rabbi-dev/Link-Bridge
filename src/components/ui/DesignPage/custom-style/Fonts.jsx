@@ -4,6 +4,7 @@ import { fonts } from "@/constants";
 import { showToast } from "@/lib/utils";
 import { useUpdateProfileDesign } from "@/lib/react-query";
 import { useThemeStore } from "@/zustand-stores";
+import { Loading } from "@/components"
 
 export const Fonts = () => {
   const [color, setColor] = useState("#fff");
@@ -60,8 +61,10 @@ export const Fonts = () => {
 
       <div className="mt-4 flex justify-between items-center">
         <ColorPicker color={color} setColor={setColor} />
-        <button onClick={() => handleUpdateFontStyle("fontColor", color)} type="button" className="btn-gradient">
-          Update Color
+        <button disabled={isUpdating} onClick={() => handleUpdateFontStyle("fontColor", color)} type="button" className="btn-gradient w-40">
+          {
+            isUpdating ? <Loading /> : "Update Color"
+          }
         </button>
       </div>
     </div>

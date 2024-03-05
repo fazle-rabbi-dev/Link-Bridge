@@ -6,7 +6,7 @@ export const Loading = ({ color, size }) => {
       <p className="dark:hidden flex justify-center items-center">
         <ClipLoader
           color={color || "#c7c7c7"}
-          size={size || 30}
+          size={size || 25}
           aria-label="Loading Spinner"
           data-testid="loader"
         />
@@ -14,7 +14,7 @@ export const Loading = ({ color, size }) => {
       <p className="hidden dark:flex justify-center items-center">
         <ClipLoader
           color={color || "#f8f8ff"}
-          size={size || 30}
+          size={size || 25}
           aria-label="Loading Spinner"
           data-testid="loader"
         />

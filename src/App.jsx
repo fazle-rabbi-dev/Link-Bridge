@@ -21,6 +21,7 @@ function App() {
     useGetUser(loggedInUserId);
 
   useEffect(() => {
+    // Eruda Console
     /*eruda.init({
       element: document.getElementById("console"),
       tools: []

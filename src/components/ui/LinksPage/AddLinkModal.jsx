@@ -121,6 +121,9 @@ export const AddLinkModal = () => {
         </div>
 
         <form onSubmit={shouldEdit ? handleEditLink : handleAddLink} className="px-4" encType="multipart/form-data">
+           <p className="mt-2 text-sm text-center font-patrickhand bg-orange-100 text-black p-2 rounded">
+            🙁 Currently, icon uploading isn't working. Please avoid uploading icons for now.
+          </p>
           <div className="my-10 flex justify-center">
             <ImageUploader
               currentFile={currentFile}

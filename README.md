@@ -6,7 +6,7 @@ LinkBridge is a full-stack MERN linktree application designed to help you organi
 
 <div align="">
 <a align="center" href="https://linkbridge.vercel.app">
-  <img width="40%" class="" src="/public/live-btn.png" alt="" />
+  <img width="100%" class="" src="/public/live-demo.png" alt="" />
 </a>
 </div>
 
@@ -18,7 +18,7 @@ LinkBridge is a full-stack MERN linktree application designed to help you organi
 > [!NOTE]
 > This project represents a significant milestone in my journey as a mern-stack developer. I poured my heart and soul into crafting this application, leveraging my MERN stack skills and embracing the principles of clean code and industry best practices.
 
-👉 I took design inspiration for this project from <a href="https://bio.link">bio link.</a>
+👉 This is my **Hobby** project & I took design inspiration for this project from <a href="https://bio.link">bio link.</a>
 
 ## Project Created at
 
@@ -52,6 +52,7 @@ LinkBridge is a full-stack MERN linktree application designed to help you organi
 - 🚪 Logout functionality
 - 🌙 Dark theme feature
 - 📈 Link stats (showing how many times and at what times your links get clicked)
+- 📱 PWA feature: Install the web app on devices for quick access, just like a regular app from an app store.
 
 ## Screenshots
 

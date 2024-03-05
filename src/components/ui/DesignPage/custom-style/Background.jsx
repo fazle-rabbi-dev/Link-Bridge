@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import ColorPicker from "react-pick-color";
-import { ImageUploader } from "@/components";
+import { ImageUploader, Loading } from "@/components";
 import { showToast } from "@/lib/utils";
 import { useUpdateProfileDesign } from "@/lib/react-query";
 import { useThemeStore } from "@/zustand-stores";
@@ -79,8 +79,11 @@ export const Background = () => {
         <div className="flex justify-center">
           <ColorPicker className="" color={color} onChange={changeColor} />
         </div>
-
-        <div className="mt-4">
+        
+        {/*
+          The code below is currently commented out because the API deployed on Cyclic doesn't allow file uploads on their server with the free plan. 
+        */}
+        {/*<div className="mt-4">
           <div className="h-64 w-full flex justify-center items-center bg-ghostwhite rounded-md dark:bg-dark-primary">
             <ImageUploader
               currentFile={currentFile}
@@ -90,10 +93,12 @@ export const Background = () => {
               usedFor="custom-bg"
             />
           </div>
-        </div>
+        </div>*/}
 
-        <button onClick={updaeBackground} className="mt-4 submit-btn text-white dark:text-dark-headline" type="button">
-          Update Background
+        <button disabled={isUpdating} onClick={updaeBackground} className="mt-4 submit-btn text-white dark:text-dark-headline" type="button">
+          {
+            isUpdating ? <Loading /> : "Update Background"
+          }
         </button>
       </div>
     </div>

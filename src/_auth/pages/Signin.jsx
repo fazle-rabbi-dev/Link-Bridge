@@ -36,7 +36,8 @@ export const Signin = () => {
     if (data) data.username = data.email;
     const res = await login(data);
 
-    if (res.error) {
+    if (!res || res?.error) {
+      console.log(res)
       showAlert("Sign in failed", res.error.message || res.error, "error");
     } else {
       const user = res.data.data;

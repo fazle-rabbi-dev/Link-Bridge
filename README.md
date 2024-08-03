@@ -10,6 +10,19 @@ LinkBridge is a full-stack MERN linktree application designed to help you organi
 </a>
 </div>
 
+> [!NOTE]
+> Watch the video below to see this app's features 👇🏻
+
+<p>
+  Open in
+  <a
+    className=""
+    href="https://www.youtube.com/w/OBbjJgiWYBw"
+  >
+    <b>YouTube</b>
+  </a>
+</p>
+
 ## Fun Fact
 > [!NOTE]
 > I created this project entirely using my **Android Phone** with apps: Acode & Termux.

@@ -13,8 +13,6 @@ export const Home = () => {
       
       <Hero />
       
-      <OverviewVideo />
-      
       {/* Features */}
       <section className="">
         <ul className="mt-10 md:mt-14 grid grid-cols-1 md:grid-cols-2 gap-4">
